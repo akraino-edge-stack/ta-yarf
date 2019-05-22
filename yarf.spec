@@ -57,7 +57,7 @@ rsync -rv systemd/* %{buildroot}%{_unitdir}/
 #/opt/openstack-ansible/playbooks/yarf.yml
 %attr(0755,root, root) %{_platform_bin_path}/restapi
 # %attr(0644,root, root) %{_unitdir}/restapi.service
-%attr(0644,root, root) %{_unitdir}/* 
+%attr(0644,root, root) %{_unitdir}/*
 %dir %attr(0770, restapi,restapi) /var/log/restapi
 
 %pre
